@@ -2,12 +2,12 @@
 
 pkgname=zathura-pdf-mupdf-git
 pkgrel=1
-pkgver=0.3.2.1.g2bedb3b
+pkgver=0.3.2.2.g858be63
 pkgdesc="PDF support for zathura by using the mupdf library"
 arch=('i686' 'x86_64')
 url="http://pwmt.org/projects/zathura-pdf-mupdf"
 license=('custom')
-depends=('zathura>=0.3.8' 'libmupdf>=1.9', 'jbig2dec>=0.14')
+depends=('zathura>=0.3.8' 'libmupdf>=1.12.0-2' 'jbig2dec>=0.14')
 makedepends=('git')
 conflicts=('zathura-pdf-mupdf')
 provides=('zathura-pdf-mupdf')
