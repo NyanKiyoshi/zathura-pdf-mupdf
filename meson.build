@@ -22,7 +22,11 @@ cairo = dependency('cairo')
 mupdf = cc.find_library('mupdf')
 mupdfthird = cc.find_library('mupdfthird')
 
-build_dependencies = [zathura, girara, glib, cairo, mupdf, mupdfthird]
+jbig2dec = cc.find_library('jbig2dec')
+openjp2 = cc.find_library('openjp2')
+jpeg = cc.find_library('jpeg')
+
+build_dependencies = [zathura, girara, glib, cairo, mupdf, mupdfthird, jbig2dec, openjp2, jpeg]
 
 # defines
 defines = [
